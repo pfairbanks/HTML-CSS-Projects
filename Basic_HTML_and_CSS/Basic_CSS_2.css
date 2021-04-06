@@ -1,0 +1,10 @@
+p {
+    color: yellow;
+    background: black;
+    font-weight: bolder;
+    text-align: center;
+}
+
+h1 {
+    text-shadow: 0 0 3px #FF0000;
+  }
