@@ -1,0 +1,11 @@
+html {
+    font-family: 'original surfer', courier, Arial, sans-serif;  
+    font-size: 15px;
+}
+
+.rsvp {
+width: 50%;
+margin: 1% auto;
+border: 2px solid blue;
+border-radius: 20px;
+}
