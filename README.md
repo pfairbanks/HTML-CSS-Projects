@@ -5,8 +5,8 @@ These are websites I made using HTML and CSS
 ## Projects
 
 * [Portfolio](http://www.paulfairbanksportfolio.com)
-* [Photography website](docs/projects/index.html)
-* [Movie Theatre Site](docs/bootstrap4_project/academy_cinemas.html)
+* [Photography website](https://github.com/pbanks74/HTML-CSS-Projects/blob/main/Portfolio/index.html)
+* [Movie Theatre Site](https://github.com/pbanks74/HTML-CSS-Projects/blob/main/bootstrap4_project/academy_cinemas.html)
 
 ### Portfolio 
 My Portfolio contains ongoing and updated information regarding my education, experience and job skills.
