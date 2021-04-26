@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <!-- HEAD -->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width" />
+        <title>Paul Fairbanks</title>
+        <link rel="stylesheet" type="text/css" href="css/portfolio.css">    
+    </head>
+
+    <!-- BODY -->
+    <body class="Background">
+
+        <!-- NAVBAR -->
+        <div class="Navbar">
+            <a class="active" href="#Home">Home</a>
+            <a href="#About">About</a>
+            <a href="#GitHub">GitHub</a>
+            <a href="#Contact">Contact</a>
+        </div>
+
+        <!-- THESE ARE BREAKS INSERTED TO ADD SPACE BETWEEN NAVBAR AND FIRST HEADING -->
+        <br>
+        <br>
+
+        <!-- BACKGROUND VIDEO -->
+        <div id="Home">
+            <video autoplay muted loop id="Typing_Video">
+                <source src="videos/waves_video.mp4" type="video/mp4">
+                Your browser does not support this video.
+            </video>
+        </div>
+
+        <!-- VIDEO TEXT -->
+        <div class="Video_Text">
+            <h1 class="white-text">Paul Fairbanks' Portfolio</h1>
+            <strong>
+                <p class="center">
+                    <q>Do not go where the path may lead,
+                        <br>go instead where there is no path 
+                        <br>and leave a trail.
+                    </q>
+                    <br> -Ralph Waldo Emerson
+                    <br>
+                    <br>Let's create something great together!
+                    <br>
+                    <br>
+                </p>
+            </strong>
+        </div>
+
+        <!-- ABOUT SECTION -->
+        <div class="Row" id="About">
+            <!-- LEFT COLUMN -->
+            <div class="Column_2">
+                <img src="images/profile_1.JPG" alt="personal portrait">
+            </div>
+            <!-- RIGHT COLUMN -->
+            <div class="Column_1">
+                <h1>About</h1>
+                <p>
+                    I am a software developer who loves to code. When I am not coding I enjoy traveling, being outdoors and spending time with my dogs.
+                    <br>
+                    <br>I am a current student of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>’s Software Developer Boot Camp. I am trained and experienced in the following web and programming languages: HTML, CSS, JavaScript, SQL, C# and Python. 
+                    <br>
+                    <br>I am a full-stack developer and would love to work with you on your project. <a href="#Contact">Contact</a> me below!
+                </p>
+            </div>
+        </div>
+
+        <!-- GITHUB SECTION -->
+        <div class="Row" id="GitHub">
+            <!-- LEFT COLUMN -->
+            <div class="Column_1">
+                <h1>GitHub</h1>
+                <p>
+                    You can view my coding projects on my GitHub profile here:
+                    <br>
+                    <p class="center"><a href="https://github.com/pbanks74" target="_blank">Paul Fairbanks GitHub</a>
+                </p>
+            </div>
+            <!-- RIGHT COLUMN -->
+            <div class="Column_2">
+                <a href="https://github.com/pbanks74" target="_blank"><img src="images/GitHub.png" alt="GitHub Logo"></a>
+            </div>
+        </div>
+
+        <!-- CONTACT SECTION -->
+        <div class="Row" id="Contact">
+            <div class="Column_2 Column_tall">
+                <img src="images/contact.jpg" alt="Laptop with code on the screen">
+            </div>
+
+            <div class="Column_1 Column_tall">
+                <h1>Contact</h1>
+                <!-- THIS SPECIFIES WHERE AND HOW TO SEND THE FORM DATA; WE ARE LEAVING IT BLANK -->
+                <form action="https://formspree.io/f/moqyvzjv" method="POST"> <!--formspree endpoint -->
+                    <label>Name:</label>
+                       <input type="text" placeholder="Please enter your name here">
+                    <label>Email:</label>
+                        <input type="text" id="Email" name="Email" placeholder="Please enter you email here">
+                    <label>Message:</label>
+                        <input type="text" id="Message" name="Message" placeholder="Please write your message here">
+                        <input type="submit" value="SUBMIT">
+                </form>
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <footer>
+            <p>
+                <p class="center">&copy Paul Fairbanks &nbsp;| &nbsp;2021 <a href="" target="_blank">Paul Fairbanks</a></p>
+                <br>
+            </p>
+        </footer>
+    
+    </body>
+</html>
