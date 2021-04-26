@@ -1,10 +1,9 @@
 # HTML-CSS-Projects
-------------------------------------------
+
 These are websites I made using HTML and CSS
--------------------------------------------
 
 ## Projects
-------------------------------------------
+
 * [Portfolio](http://www.paulfairbanksportfolio.com)
 * [Photography website]
 * [Movie Theatre Site](file:///Users/paulfairbanks/Documents/GitHub/HTML-CSS-Projects/bootstrap4_project/academy_cinemas.html#)
