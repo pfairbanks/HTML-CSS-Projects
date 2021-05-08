@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <title>Jeni Claire Photography</title>
         <link rel="stylesheet" href="css/one_page_website.css">
+        <script src="JS/one_page_website.js"></script>
     </head>
     <body>
 
@@ -37,9 +38,10 @@
                 <div>
                
                      <!-- PHOTO-CONTAINER 1 -->
-                    <div>
-                        <div>
-                            <img src="./images/thumb/thumbnail_10.jpg" alt="Just married couple sitting in antique car">
+                    <div class="row">
+                        <div class="column">
+                            <img src="./images/thumb/image_1.JPG" alt="Just married couple sitting in antique car"
+                            onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
                             <div>
                                 <h3>Click to enlarge</h3>
                                 <p>Professional Photography service for all!</p>
@@ -49,9 +51,10 @@
                     <!-- END PHOTO CONTAINER 1 -->
 
                     <!-- PHOTO-CONTAINER 2 -->
-                    <div>
-                        <div>
-                            <img src="./images/thumb/thumbnail_11.jpg" alt="couple kissing while standing in lake with mountains in background">
+                    <div class="row">
+                        <div class="column">
+                            <img src="./images/thumb/image_2.JPG" alt="couple kissing while standing in lake with mountains in background"
+                            onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
                             <div>
                                 <h3>Click to enlarge</h3>
                                 <p>Professional Photography service for all!</p>
@@ -61,9 +64,10 @@
                     <!-- END PHOTO CONTAINER 2 -->
 
                     <!-- PHOTO-CONTAINER 3 -->
-                    <div>
-                        <div>
-                            <img src="./images/thumb/thumbnail_12.jpg" alt="Flower girl with crown">
+                    <div class="row">
+                        <div class="column">
+                            <img src="./images/thumb/image_5.JPG" alt="Flower girl with crown"
+                            onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
                             <div>
                                 <h3>Click to enlarge</h3>
                                 <p>Professional Photography service for all!</p>
@@ -73,9 +77,10 @@
                     <!-- END PHOTO CONTAINER 3 -->
 
                     <!-- PHOTO-CONTAINER 4 -->
-                    <div>
-                        <div>
-                            <img src="./images/thumb/thumbnail_13.jpg" alt="Just married couple with valley in background">
+                    <div class="row">
+                        <div class="column">
+                            <img src="./images/thumb/image_7.JPG" alt="Just married couple with valley in background"
+                            onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
                             <div>
                                 <h3>Click to enlarge</h3>
                                 <p>Professional Photography service for all!</p>
@@ -85,9 +90,10 @@
                     <!-- END PHOTO CONTAINER 4 -->
 
                     <!-- PHOTO-CONTAINER 5 -->
-                    <div>
-                        <div>
-                            <img src="./images/thumb/thumbnail_14.jpg" alt="Mountain goats">
+                    <div class="row">
+                        <div class="column">
+                            <img src="./images/thumb/image_6.JPG" alt="Mountain goats"
+                            onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
                             <div>
                                 <h3>Click to enlarge</h3>
                                 <p>Professional Photography service for all!</p>
@@ -97,9 +103,10 @@
                     <!-- END PHOTO CONTAINER 5 -->
 
                     <!-- PHOTO-CONTAINER 6 -->
-                    <div>
-                        <div>
-                            <img src="./images/thumb/thumbnail_15.jpg" alt="Kayaks shored at lake with mountain reflection">
+                    <div class="row">
+                        <div class="column">
+                            <img src="./images/thumb/image_4.JPG" alt="Kayaks shored at lake with mountain reflection"
+                            onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
                             <div>
                                 <h3>Click to enlarge</h3>
                                 <p>Professional Photography service for all!</p>
@@ -109,9 +116,10 @@
                     <!-- END PHOTO CONTAINER 6 -->
 
                     <!-- PHOTO-CONTAINER 7 -->
-                    <div>
-                        <div>
-                            <img src="./images/thumb/thumbnail_16.jpg" alt="Tulip Farm">
+                    <div class="row">
+                        <div class="column">
+                            <img src="./images/thumb/image_8.JPG" alt="Tulip Farm"
+                            onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
                             <div>
                                 <h3>Click to enlarge</h3>
                                 <p>Professional Photography service for all!</p>
@@ -121,9 +129,10 @@
                     <!-- END PHOTO CONTAINER 7 -->
 
                     <!-- PHOTO-CONTAINER 8 -->
-                    <div>
-                        <div>
-                            <img src="./images/thumb/thumbnail_17.jpg" alt="Autumn family portrait">
+                    <div class="row">
+                        <div class="column">
+                            <img src="./images/thumb/image_9.JPG" alt="Autumn family portrait"
+                            onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
                             <div>
                                 <h3>Click to enlarge</h3>
                                 <p>Professional Photography service for all!</p>
@@ -133,9 +142,10 @@
                     <!-- END PHOTO CONTAINER 8 -->
 
                     <!-- PHOTO-CONTAINER 9 -->
-                    <div>
-                        <div>
-                            <img src="./images/thumb/thumbnail_18.jpg" alt="Grizzly bear">
+                    <div class="row">
+                        <div class="column">
+                            <img src="./images/thumb/image_3.JPG" alt="Spring Bloom"
+                            onclick="openModal();currentSlide(9)" class="hover-shadow cursor">
                             <div>
                                 <h3>Click to enlarge</h3>
                                 <p>Professional Photography service for all!</p>
@@ -144,6 +154,92 @@
                     </div>
                     <!-- END PHOTO CONTAINER 9 -->
 
+                    <div id="myModal" class="modal">
+                        <span class="close cursor" onclick="closeModal()">&times;</span>
+                        <div class="modal-content">
+
+                            <div class="mySlides">
+                                <div class="numbertext">1 / 9</div>
+                                <img src="./images/thumb/image_1.JPG" style="width:100%">
+                            </div>
+                            <div class="mySlides">
+                                <div class="numbertext">2 / 9</div>
+                                <img src="./images/thumb/image_2.JPG" style="width:100%">
+                            </div>
+                            <div class="mySlides">
+                                <div class="numbertext">3 / 9</div>
+                                <img src="./images/thumb/image_5.JPG" style="width:100%">
+                            </div>
+                            <div class="mySlides">
+                                <div class="numbertext">4 / 9</div>
+                                <img src="./images/thumb/image_7.JPG" style="width:100%">
+                            </div>
+                            <div class="mySlides">
+                                <div class="numbertext">5 / 9</div>
+                                <img src="./images/thumb/image_6.JPG" style="width:100%">
+                            </div>
+                            <div class="mySlides">
+                                <div class="numbertext">6 / 9</div>
+                                <img src="./images/thumb/image_4.JPG" style="width:100%">
+                            </div>
+                            <div class="mySlides">
+                                <div class="numbertext">7 / 9</div>
+                                <img src="./images/thumb/image_8.JPG" style="width:100%">
+                            </div>
+                            <div class="mySlides">
+                                <div class="numbertext">8 / 9</div>
+                                <img src="./images/thumb/image_9.JPG" style="width:100%">
+                            </div>
+                            <div class="mySlides">
+                                <div class="numbertext">9 / 9</div>
+                                <img src="./images/thumb/image_3.JPG" style="width:100%">
+                            </div>
+                            
+                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                            <div class="caption-container">
+                                <p id="caption"></p>
+                            </div>
+
+                            <div class="column">
+                                <img class="demo cursor" src="./images/thumb/image_1.JPG" 
+                        style="width:100%" onclick="currentSlide(1)" alt="Just married couple sitting in antique car">
+                            </div>
+                            <div class="column">
+                                <img class="demo cursor" src="./images/thumb/image_2.JPG" 
+                        style="width:100%" onclick="currentSlide(2)" alt="couple kissing while standing in lake with mountains in background">
+                            </div>
+                            <div class="column">
+                                <img class="demo cursor" src="./images/thumb/image_5.JPG" 
+                        style="width:100%" onclick="currentSlide(3)" alt="Flower girl with crown">
+                            </div>
+                            <div class="column">
+                                <img class="demo cursor" src="./images/thumb/image_7.JPG" 
+                        style="width:100%" onclick="currentSlide(4)" alt="Just married couple with valley in background">
+                            </div>
+                            <div class="column">
+                                <img class="demo cursor" src="./images/thumb/image_6.JPG" 
+                        style="width:100%" onclick="currentSlide(5)" alt="Mountain goats">
+                            </div>
+                            <div class="column">
+                                <img class="demo cursor" src="./images/thumb/image_4.JPG" 
+                        style="width:100%" onclick="currentSlide(6)" alt="Kayaks shored at lake with mountain reflection">
+                            </div>
+                            <div class="column">
+                                <img class="demo cursor" src="./images/thumb/image_8.JPG" 
+                        style="width:100%" onclick="currentSlide(7)" alt="Tulip Farm">
+                            </div>
+                            <div class="column">
+                                <img class="demo cursor" src="./images/thumb/image_9.JPG" 
+                        style="width:100%" onclick="currentSlide(8)" alt="Autumn family portrait">
+                            </div>
+                            <div class="column">
+                                <img class="demo cursor" src="./images/thumb/image_3.JPG" 
+                        style="width:100%" onclick="currentSlide(9)" alt="Spring Bloom">
+                            </div>
+                        </div>   
+                    </div>
                 </div>
             </div>
         </section>
