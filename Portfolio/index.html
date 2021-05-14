@@ -1,61 +1,107 @@
 <!DOCTYPE html>
-<html>
-    <!-- HEAD -->
+<html lang="en">
+
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width" />
         <title>Paul Fairbanks</title>
-        <link rel="stylesheet" type="text/css" href="css/portfolio.css">    
+        <link rel="stylesheet" type="text/css" href="css/portfolio.css">
     </head>
 
-    <!-- BODY -->
     <body class="Background">
 
-        <!-- NAVBAR -->
+        <!-- Navbar -->
         <div class="Navbar">
             <a class="active" href="#Home">Home</a>
+            <a href="#Slideshow">Slidshow</a>
             <a href="#About">About</a>
             <a href="#GitHub">GitHub</a>
-            <a href="#Contact">Contact</a>
+            <a onclick="openForm()" ondblclick="closeForm()">Contact</a>
         </div>
 
-        <!-- THESE ARE BREAKS INSERTED TO ADD SPACE BETWEEN NAVBAR AND FIRST HEADING -->
-        <br>
-        <br>
-
-        <!-- BACKGROUND VIDEO -->
+        <!-- Background video -->
         <div id="Home">
-            <video autoplay muted loop id="Typing_Video">
-                <source src="videos/waves_video.mp4" type="video/mp4">
-                Your browser does not support this video.
+            <video autoplay muted loop id="backgroundVideo">
+                <source src="images/video/waves.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
             </video>
         </div>
 
-        <!-- VIDEO TEXT -->
-        <div class="Video_Text">
+        <!-- Video text -->
+        <div class="VideoText">
             <h1 class="white-text">Paul Fairbanks' Portfolio</h1>
             <strong>
                 <p class="center">
                     <q>Do not go where the path may lead,
-                        <br>go instead where there is no path 
+                        <br>go instead where there is no path
                         <br>and leave a trail.
                     </q>
-                    <br> -Ralph Waldo Emerson
+                    <br> -Ralph Waldo Emerson<br>
                     <br>
                     <br>Let's create something great together!
-                    <br>
-                    <br>
                 </p>
             </strong>
         </div>
 
-        <!-- ABOUT SECTION -->
-        <div class="Row" id="About">
-            <!-- LEFT COLUMN -->
-            <div class="Column_2">
-                <img src="images/profile_1.JPG" alt="personal portrait">
+        <!-- Slideshow -->
+        <div id="Slideshow">
+            <div id="Slideshow_Background">
+                <div id="Slideshow_Container">
+                    <!-- Slide 1 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="images/paul1.jpeg" alt="Self Photo">
+                        <div class="text">I'm available to assist you on your project!</div>
+                    </div>
+                    <!-- Slide 2 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="images/HTML_CSS_and_JavaScript.jpeg" alt="HTML, CSS, and JS logos"> 
+                        <div class="text">I am a full-stack software developer,<br> trained in:<br>HTML, CSS, JavaScript,</div>
+                    </div>
+                    <!-- Slide 3 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="images/Python.png" alt="Python logo">
+                        <div class="text">the popular programming language Python,</div>
+                    </div>
+                    <!-- Slide 4 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="images/C_Sharp_and_Dot_NET.png" alt="C# logo">
+                        <div class="text">C#, .NET Framework, ASP.NET, MVC, </div>
+                    </div>
+                    <!-- Slide 5 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="images/SQL_and_Database.jpg" alt="SQL logo"> 
+                        <div class="text">back end development, databases and SQL.</div>
+                    </div>
+                    <!-- Slide 6 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="images/paul 2.jpeg" alt="Self Photo"> 
+                        <div class="text"><a class="white-text" onclick="openForm()" href="#Contact">Contact me now!</a></div> 
+                    </div>
+                    <!-- Previous and next buttons -->
+                    <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br> <!-- Adds space between images and the dots -->
+            
+                <!-- Slideshow dots (another way to navigate slideshow) -->
+                <div style="text-align: center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span> 
+                    <span class="dot" onclick="currentSlide(4)"></span> 
+                    <span class="dot" onclick="currentSlide(5)"></span> 
+                    <span class="dot" onclick="currentSlide(6)"></span> 
+                </div>
             </div>
-            <!-- RIGHT COLUMN -->
+        </div>
+
+        <!-- About section -->
+        <div class="Row" id="About">
+            <!-- Left column -->
+            <div class="Column_2">
+                <img src="images/paul1.jpeg" alt="Self Photo">
+            </div>
+            <!-- Right column -->
             <div class="Column_1">
                 <h1>About</h1>
                 <p>
@@ -68,51 +114,48 @@
             </div>
         </div>
 
-        <!-- GITHUB SECTION -->
+        <!-- GitHub section -->
         <div class="Row" id="GitHub">
-            <!-- LEFT COLUMN -->
+            <!-- Left column -->
             <div class="Column_1">
                 <h1>GitHub</h1>
-                <p>
-                    You can view my coding projects on my GitHub profile here:
+                <p>You can view my coding projects on my GitHub profile here:
                     <br>
-                    <p class="center"><a href="https://github.com/pbanks74" target="_blank">Paul Fairbanks GitHub</a>
+                    <p class="center"><a href="https://github.com/pbanks74" target="_blank">Paul Fairbanks GitHub</a></p>
                 </p>
             </div>
-            <!-- RIGHT COLUMN -->
+            <!-- Right coulmn -->
             <div class="Column_2">
-                <a href="https://github.com/pbanks74" target="_blank"><img src="images/GitHub.png" alt="GitHub Logo"></a>
+                <a href="https://github.com/pbanks74" target="_blank"><img src="images/GitHub.png"></a>
             </div>
         </div>
 
-        <!-- CONTACT SECTION -->
-        <div class="Row" id="Contact">
-            <div class="Column_2 Column_tall">
-                <img src="images/contact.jpg" alt="Laptop with code on the screen">
-            </div>
+        <!-- Contact form -->
+        <div id="Contact">
+            <button onclick="openForm()" class="Pop_Up_Button">CONTACT</button>
+            <div class="form-popup" id="myForm">
+                <form action="https://formspree.io/f/moqyvzjv" method="POST" class="form-container">
+                    <h1>Contact</h1>
+                    <label for="name"><b>Name</b></label>
+                      <input type="text" placeholder="Type your name here" name="name" required>
+                    <label for="phone"><b>Phone</b></label>
+                      <input type="text" placeholder="Type your phone number here" name="phone">
+                    <label for="email"><b>Email</b></label>		
+                      <input type="text" placeholder="Type your email address here" name="email" required>
+                    <label for="message"><b>Message</b></label>
+                      <input type="text" placeholder="Type your message here" name="message">
 
-            <div class="Column_1 Column_tall">
-                <h1>Contact</h1>
-                <!-- THIS SPECIFIES WHERE AND HOW TO SEND THE FORM DATA; WE ARE LEAVING IT BLANK -->
-                <form action="https://formspree.io/f/moqyvzjv" method="POST"> <!--formspree endpoint -->
-                    <label>Name:</label>
-                       <input type="text" placeholder="Please enter your name here">
-                    <label>Email:</label>
-                        <input type="text" id="Email" name="Email" placeholder="Please enter you email here">
-                    <label>Message:</label>
-                        <input type="text" id="Message" name="Message" placeholder="Please write your message here">
-                        <input type="submit" value="SUBMIT">
+                    <button type="submit" class="btn">SUBMIT</button>
+                    <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
                 </form>
             </div>
         </div>
 
-        <!-- FOOTER -->
+        <!-- Footer -->
         <footer>
-            <p>
-                <p class="center">&copy Paul Fairbanks &nbsp;| &nbsp;2021 <a href="" target="_blank">Paul Fairbanks</a></p>
-                <br>
-            </p>
+            <p class="center">&copy Paul Fairbanks &nbsp;| &nbsp;2021 <a href="" target="_blank">Paul Fairbanks</a></p>
         </footer>
-    
+        <script src="js/portfolio.js"></script> 
+
     </body>
 </html>
