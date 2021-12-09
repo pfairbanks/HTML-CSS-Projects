@@ -1,6 +1,6 @@
 # HTML-CSS-Projects
 
-These are websites I made using HTML and CSS
+This course taught me how to utilize HTML and CSS to properly create, format and style web pages while also building the foundation for writing clean and commented code.
 
 ## Projects
 
@@ -17,4 +17,6 @@ This page is a basic photography website built for Jeni Claire Photography. It i
 ### Movie Theatre Site
 This is an example page for a movie theatre that is styled using bootstrap.  It includes many bootstrap elements including a navbar, jumbotron, cards, dropdowns and a form. 
 
+## Conclusion
+The Tech Academy's HTML and CSS Course taught me how to think like a computer programmer as well as how to properly create, format and style web pages. These skills learned will certainly be vital in my tech career as they will be the basic foundation of everything I do going foward.
 
